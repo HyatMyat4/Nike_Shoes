@@ -8,8 +8,8 @@ export default function ShoeCard({ data }: any) {
     <Tilt // This way is work But not good way to realworld
       className={` relative bg-gradient-to-b fcc  w-[410px] h-[300px] rounded-[10px]  mb-[25px]
     ${
-      data.color
-        ? data.color
+      data.color // => it applied to html element in browser but not show colour
+        ? data.color // So i use Pre make colour =>
         : "from-violet-500 to-indigo-500 from-indigo-700 to-indigo-700 from-sky-600 to-indigo-600 from-green-500 to-emerald-500 from-orange-500 to-amber-500 from-gray-900 to-yellow-500 from-blue-500 to-cyan-500 from-yellow-500 to-yellow-500 from-red-500 from-[#936550] to-orange-900 from-slate-900 to-black  from-blue-900 to-blue-500  to-rose-500 from-blue-600 to-blue-500 shadow-blue-500 shadow-rose-500 shadow-violet-500"
     }
     `}
@@ -47,11 +47,11 @@ export default function ShoeCard({ data }: any) {
     </Tilt>
   );
 }
-/* it Should be like thais 
-  => it applied to html element in browser but not show colour 
+/* it Should be like This
+ 
  
     <Tilt
-      className={` relative bg-gradient-to-b fcc  w-[410px] h-[300px] rounded-[10px]  mb-[25px]  ${data.color} `}
+      className={` relative bg-gradient-to-b fcc  w-[410px] h-[300px] rounded-[10px]  mb-[25px]  ${data.color} => it applied to html element in browser but not show colour  `}
     >
       <div id="italy" className="fcc select-none  text-slate-200 ">
         <h3 className=" text-lg font-bold filter drop-shadow-sm ">
