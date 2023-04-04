@@ -51,38 +51,9 @@ export default function ShoeCard({ data }: any) {
  
  
     <Tilt
-      className={` relative bg-gradient-to-b fcc  w-[410px] h-[300px] rounded-[10px]  mb-[25px]  ${data.color} => it applied to html element in browser but not show colour  `}
-    >
-      <div id="italy" className="fcc select-none  text-slate-200 ">
-        <h3 className=" text-lg font-bold filter drop-shadow-sm ">
-          {data.title}
-        </h3>
-        <div className="frc justify-center mt-[5px]">
-          <span className="px-[12px] py-[3px] rounded-[5px] bg-slate-200 text-black">
-            ${data.price}
-          </span>
-          <div className="ml-[15px] frc justify-center">
-            <AiOutlineStar className="text-[20px] " />
-            <span className="ml-[4px]">{data.rating}</span>
-          </div>
-        </div>
-        <div className="frc mt-[10px] justify-center text-black">
-          <div className="p-[4px] active:scale-90 transition-all duration-100 rounded bg-slate-100 cursor-pointer ">
-            <SiShopify className="text-[24px]" />
-          </div>
-          <div className="px-[20px] py-[4px] active:scale-90 transition-all duration-100 cursor-pointer bg-slate-100 rounded ml-[12px]">
-            Buy Now
-          </div>
-        </div>
-      </div>
-      <div className="">
-         <div className=" rotate-0 hover:rotate-[-12deg]  transition-all  duration-700 ease-in-out">
-            <img 
-            src={data.img} 
-            className="w-[280px] h-auto"
-            />
-         </div>
-      </div>
+      className={` relative bg-gradient-to-b fcc  w-[410px] h-[300px] rounded-[10px]  mb-[25px]  
+      ${data.color} => it applied to html element in browser but not show colour  `}
+    >   
     </Tilt>
 
 */
