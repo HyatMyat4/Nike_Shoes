@@ -15,7 +15,12 @@
   .ScaleAnimation {
     @apply hover:scale-125 transition-all duration-75 cursor-pointer;
   }
-  
+  .PreBuildColour {
+    @apply from-violet-500 to-indigo-500 from-indigo-700 from-green-600 to-lime-500 to-indigo-700 from-sky-600 to-indigo-600 from-green-500 to-emerald-500 from-orange-500 to-amber-500 from-gray-900 to-yellow-500 from-blue-500 to-cyan-500 from-yellow-500 to-yellow-500 from-red-500 from-[#936550] to-orange-900 from-slate-900 to-black  from-blue-900 to-blue-500  to-rose-500 from-blue-600 to-blue-500 shadow-blue-500 shadow-rose-500 shadow-violet-500
+  }
+  .prebuildshaode{
+    @apply shadow-lime-500  shadow-blue-500  shadow-green-500 shadow-orange-500 shadow-yellow-500  shadow-black  shadow-indigo-500  shadow-orange-800
+  }
 }
 
 #monospace {

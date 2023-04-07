@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body id='cutomscoll' className="bg-[#FFFFFF] dark:bg-[black]">
+      <body id='cutomscoll' className="bg-[#FFFFFF] dark:bg-[black]">      
         <Providers>
           {children}
         </Providers>
@@ -20,3 +20,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+ 

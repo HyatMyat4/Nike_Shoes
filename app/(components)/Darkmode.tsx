@@ -3,7 +3,7 @@ import React from 'react'
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import { FiSun , FiMoon } from "react-icons/fi";
-function Darkmode() {
+function Darkmode( { onScroll } : any) {
     const [mounted, setmounted] = useState(false);
     const { systemTheme, theme, setTheme } = useTheme();
   
@@ -14,8 +14,9 @@ function Darkmode() {
     if (!mounted) return null;
   
     const currentTheme = theme === "system" ? systemTheme : theme;
+    
   return (
-    <div className="Header-icon cursor-pointer  bg-slate-100 rounded-full p-[6px]   hover:scale-100 z-[99999] ml-[15px] ">
+    <div className={`Header-icon cursor-pointer  ${onScroll  ? 'dark:bg-slate-100 bg-slate-800 ' : 'bg-slate-100'}  rounded-full p-[6px]   hover:scale-100 z-[99] ml-[15px] `}>
     {currentTheme === "dark" ? (
       <FiSun
         onClick={() => setTheme("light")}
